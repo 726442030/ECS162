@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo:ital,wght@0,100;0,400;0,700;1,800&display=swap');
+
+.container {
+  disp: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  margin-top: 25px;
+}
+
+.header_element {
+  width: 100%;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 48px;
+  align-items: end;
+  justify-content: flex-end;
+  margin-bottom: 90px;
+}
+
+p {
+  align-self: center;
+}
+
+#but {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.button_style{
+  background-color: #EE1D52;
+  border: outset #EE1D52;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px 30px;
+  width: 180px;
+  align-self: center;
+}
+
+span {
+  color: #EE1D52;
+}
+
+@media (max-width: 900px) {
+  main {
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #but {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
