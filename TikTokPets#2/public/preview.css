@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ /* put the colors in CSS variables */
+  --ttmagenta: rgba(238, 29, 82, 0.8);
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}  
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+button {
+  background-color: var(--ttmagenta);
+  color: white;
+  font-family: sans-serif;
+  width: 130px;
+  height: 50px; 
+  border-radius: 10px;
+  margin: 10px;
+}
+
+div.video {
+  width: 325px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: var(--ttmagenta);
+  margin-bottom: 50px;
+}
+
+blockquote {
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 10px;
+  background-color:var(--ttmagenta);
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+
+
+header.preview {
+  justify-content: center;
+}
+
+.caption {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+div.frontSL {
+  width: 130px;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#reload {
+  font-family: "Boogaloo";
+  font-size: 64px;
+  color: var(--ttmagenta);
+  background-color: white;
+  width: 100px;
+  height: 100px; 
+  border-radius: 0px;
+  margin: 0px;
+}

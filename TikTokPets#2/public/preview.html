@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+  <title>TTPets Video Viewer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+  <link rel="stylesheet" type="text/css" href="preview.css" />
+  <script defer src="preview.js" id="ourScript"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+
+integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <header class="preview">
+      <h1>Video Preview</h1>
+    </header>
+  </header>
+  
+  <main>
+    <div class="video">
+      <div id="tiktokDiv"></div>
+      <h2 id="uploaded"></h2>
+      <script>
+        document.getElementById("uploaded").innerHTML = 
+        `<p class="caption">
+        ${sessionStorage.getItem("nickname")}
+        </p>`;
+      </script>
+    </div> 
+  </main>
+
+  <div class="buttons">
+    <div class="frontSL"></div>
+    <button id="reload"><i class="fas fa-redo-alt" ></i></button>
+    <button onclick="javascript:window.location.href='index.html'">Continue</button>
+  </div>
+  
+  
+  </body>
+  </html>
